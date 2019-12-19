@@ -1,82 +1,74 @@
-.wrap{
-	background: blue;
-	width: 900px;
+body{
+	background-color:#f9f9f9;
+	font-size:16px
+	color:#444;
+	font-family: sans-serif;
+}
+ 
+.content{
+	width: 80%;
 	margin: 10px auto;
 }
  
-/*bagian header*/
-.wrap .header{
-	background: green;
-	/*height: 50px;*/
-	padding: 2px 10px;
+/*header*/
+header{
+	background-color: white;
+	padding: 20px 10px;
+	border-radius: 5px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 10px;
 }
  
-/*akhir header*/
- 
-/*bagian menu*/
-.wrap .menu{
-	background: yellow;
+header h1.judul,
+header h3.deskripsi{
+	text-align: center;	
 }
  
-.wrap .menu ul{
-	padding: 0;
-	margin: 0;
-	background: yellow;
+/*menu navigasi*/
+.menu{
+	background-color: #87CEFA;
+	border: 1px solid #f0f0f0;
+	border-radius: 8px;	
+	margin-bottom: 10px;
+}
+ 
+div.menu ul {
+	list-style:none;
 	overflow: hidden;
 }
  
-.wrap .menu ul li{
-	float: left;
-	list-style-type: none;
-	padding: 10px;
-}
-/*akhir menu*/
  
-.clear{
-	clear: both;
+div.menu ul li {
+	float:left;		
+	text-transform:uppercase;
 }
  
-.badan{
-	height: 450px;
-}
-/*bagian sidebar*/
-.wrap .badan .sidebar{
-	background: orange;
-	float: left;	
-	width: 25%;
-	height: 100%;
-}
- 
-/*akhir sidebar*/
- 
-.wrap .badan .content{
-	background: red;
-	float: left;
-	height: 100%;
-	width: 75%;	
+div.menu ul li a {
+	display:block;	
+	padding:0 20px;
+	text-decoration:none;
+	color:#2c2c2c;
+	font-family: sans-serif;
+	font-size:13px;
+	font-weight:400;
+	transition:all 0.3s ease-in-out;
 }
  
-.wrap .footer{
-	width: 100%;
-	padding: 10px;
+div.menu ul li a:hover,
+div.menu ul li a.hoverover {	
+	cursor: pointer;	
+	color:#fff;
 }
-jalankan file index.html pada browser
-
-membuat tampilan layout website sederhana dengan html dan css
-membuat tampilan layout website sederhana dengan html dan css
-nah tampilan layout sederhana pun selesai. sengaja warna pada masing-masing bagian saya bedakan dengan warna yang masih asal-asalan. agar teman-teman lebih mudah untuk memahaminya. baiklah sekian dulu tutorial tentang membuat tampilann layout website sederhana dengan html dan css. pada tutorial web design selanjutnya akan saya bahas tentang membuat sebuah template website sendiri dengan design yang menarik dan responsive tentunya.
-
-Download
-
-Incoming search terms:
-
-membuat tampilan web menarik dengan css
-contoh desain web menggunakan html dan css
-cara membuat web sederhana dengan html dan css
-membuat tampilan web yang menarik dengan php
-cara membuat layout
-contoh web sederhana dengan html dan css
-membuat layout web dengan css
-cara membuat website dengan html
-cara membuat tampilan web
-tampilan web
+ 
+ 
+div.badan{
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+ 
+div.halaman{
+	text-align: center;
+	padding: 30px 20px;	
+}
