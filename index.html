@@ -35,20 +35,20 @@ Site : me.birru.net
  
 		switch ($page) {
 			case 'home':
-				include "home.php";
+				include "halaman/home.php";
 				break;
 			case 'tentang':
-				include "tentang.php";
+				include "halaman/tentang.php";
 				break;
 			case 'tutorial':
-				include "tutorial.php";
+				include "halaman/tutorial.php";
 				break;			
 			default:
 				echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
 				break;
 		}
 	}else{
-		include "home.php";
+		include "halaman/home.php";
 	}
  
 	 ?>
