@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Membuat Halaman Web Dinamis Dengan PHP | Birru.Net</title>
+	<!-- menghubungkan dengan file css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- menghubungkan dengan file jquery -->
+	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
-	<div class="wrap">
-		<div class="header">			
-			<h1>Name is Khan</h1>
-			<p>Tutorial belajar membuat layout website sederhana</p>
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">HTML</a></li>
-				<li><a href="#">CSS</a></li>
-				<li><a href="#">PHP</a></li>
-				<li><a href="#">Javascript</a></li>				
-			</ul>
-		</div>
-		<div class="badan">			
-			<div class="sidebar">
-				sidebar
-				<ul>
-					<li><a href="#">Tutorial HTML dasar</a></li>
-					<li><a href="#">Tutorial CSS dasar</a></li>
-					<li><a href="#">Tutorial PHP dasar</a></li>
-					<li><a href="#">Tutorial JQuery dasar</a></li>				
-				</ul>
-			</div>
-			<div class="content">
-				content
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div class="footer">
-			footer
-		</div>
+<!-- 
+Author : Musa Birru Abidullah 
+Site : me.birru.net
+-->
+<div class="content">
+	<header>
+		<h1 class="judul">Gen Creative</h1>
+		<h3 class="deskripsi">Inspire the Changes</h3>
+	</header>
+ 
+	<div class="menu">
+		<ul>
+			<li><a href="index.php?page=home">HOME</a></li>
+			<li><a href="index.php?page=tentang">TENTANG</a></li>
+			<li><a href="index.php?page=tutorial">TUTORIAL</a></li>
+		</ul>
 	</div>
+ 
+	<div class="badan">
+ 
+ 
+	<?php 
+	if(isset($_GET['page'])){
+		$page = $_GET['page'];
+ 
+		switch ($page) {
+			case 'home':
+				include "halaman/home.php";
+				break;
+			case 'tentang':
+				include "halaman/tentang.php";
+				break;
+			case 'tutorial':
+				include "halaman/tutorial.php";
+				break;			
+			default:
+				echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
+				break;
+		}
+	}else{
+		include "halaman/home.php";
+	}
+ 
+	 ?>
+ 
+	</div>
+</div>
 </body>
 </html>
